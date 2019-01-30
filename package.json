@@ -1,0 +1,11 @@
+{
+  "name": "palindrome",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Jon Cameron",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "start": "node index.js"
+  }
+}
