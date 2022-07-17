@@ -1,7 +1,11 @@
 function isPalindrome(number) {
-  const numberAsString = number.toString();
+  const s = number.toString().split("");
 
-  return numberAsString === numberAsString.split("").reverse().join("");
+  let left = 0;
+  let right = s.length - 1;
+
+  while (left < right) if (s[left++] !== s[right--]) return false;
+  return true;
 }
 
 function findLargest3DigitIntegerProductPalindrome() {
@@ -20,4 +24,6 @@ function findLargest3DigitIntegerProductPalindrome() {
   return Math.max(...answers);
 }
 
-console.log(`Largest 3 Digit Integer Product Palindrome: ${findLargest3DigitIntegerProductPalindrome()}`);
+console.log(
+  `Largest 3 Digit Integer Product Palindrome: ${findLargest3DigitIntegerProductPalindrome()}`
+);
